@@ -1,13 +1,31 @@
-body {
-    background-image: url("../images/background.png");
-}
-
 a {
     text-decoration: none;
     color: #ffffff;
+    outline: none;
 }
 
-div.black_strap {
+a:hover {
+    color: #ffc000;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.cb {
+    clear: both;
+}
+
+body {
+    background-image: url("../images/background.png");
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+div#black_stripe {
     background-color: #000000;
     height: 28px;
     width: 100%;
@@ -18,10 +36,6 @@ div.content {
     width: 981px;
 }
 
-ul.links1 {
-    float: left;
-}
-
 ul.links {
     padding-top: 4px;
 }
@@ -29,31 +43,12 @@ ul.links {
 ul.links li {
     display: inline;
     text-decoration: none;
+    font-size: 13px;
     color: #ffffff;
-    font-size: 16px;
     margin-right: 34px;
 }
 
-/*Top links*/
-ul.links li.contact {
-    margin-left: 61px;
-}
-
-ul.links li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-ul.links li a:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-ul.links li a:hover {
-    color: #ffc000;
-}
-
-div.white_strap {
+div.white_stripe {
     width: 100%;
     background-color: #ffffff;
 }
@@ -65,52 +60,50 @@ div#header {
     position: relative;
 }
 
-h1 {
+div#header h1 {
     font-size: 37px;
-    font-family: Verdana;
     color: #3793c7;
     font-weight: bold;
+    position: absolute;
     left: 207px;
     top: 44px;
-    position: absolute;
 }
 
-h6 {
+div#header h6 {
     color: #3793c7;
     font-size: 16px;
     position: absolute;
     left: 414px;
     top: 92px;
-    font-family: Verdana;
 }
 
-a.follow_me {
+a#follow_me {
     position: absolute;
     left: 711px;
     top: 92px;
     display: inline-block;
 }
 
-a.button_quote {
-    width: 138px;
-    height: 25px;
+a#button_quote {
     background-color: #1092e6;
     color: #ffffff;
     font-size: 16px;
-    display: inline-block;
     text-align: center;
+    display: inline-block;
+    border-radius: 8px;
     position: absolute;
+    width: 138px;
+    height: 25px;
     top: 46px;
     left: 817px;
-    border-radius: 8px;
     padding-top: 8px;
 }
 
-a.button_facebook {
-    height: 36px;
-    width: 119px;
+a#button_facebook {
     background-image: url("../images/facebook.png");
     background-repeat: no-repeat;
+    height: 36px;
+    width: 119px;
     display: inline-block;
     position: absolute;
     left: 837px;
@@ -125,12 +118,11 @@ div#menu {
     padding-bottom: 5px;
 }
 
-ul.menu {
+div#menu ul {
     padding-top: 13px;
-
 }
 
-ul.menu li {
+div#menu ul li {
     display: inline-block;
     color: #ffffff;
     background-image: url("../images/punktom.gif");
@@ -138,21 +130,16 @@ ul.menu li {
     padding-left: 31px;
     line-height: 30px;
     padding-right: 12px;
-
+    font-size: 15px;
 }
 
-ul.menu li:first-child {
-    background: none;
+div#menu ul li:first-child {
+    background-image: none;
     margin-left: -28px;
 }
 
-ul.menu li a:visited {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-ul.menu li a:hover {
-    color: #ffc000;
+div#menu ul li:last-child {
+    padding-right: 0;
 }
 
 div#box {
@@ -166,53 +153,39 @@ div.offer {
     background-repeat: repeat-y;
 }
 
-div.offer a {
-    text-decoration: none;
-    color: #ffc000;
-    outline: none;
-}
-
 div.offer img {
     display: none;
 }
 
 div.offer a:first-child {
-    text-decoration: none;
-    color: #ffc000;
     outline: none;
     display: block;
-    height: 365px;
-}
+height: 365px;
+    }
 
 h2 {
     color: #ffc000;
     font-size: 23px;
-    margin-left: 13px;
-    margin-top: 5px;
-    font-family: Verdana;
+    margin: 5px 0 0 13px;
+    line-height: 27px;
 }
 
 h4 {
     color: #ffffff;
     font-size: 11px;
     line-height: 20px;
-    margin-left: 13px;
-    font-family: Verdana;
-    margin-bottom: 10px;
+    margin: 0 0 10px 13px;
 }
 
-div.cb {
-    clear: both;
-}
+
 
 div#small_boxes {
     width: 981px;
 }
 
 div.small_boxes {
-    margin-top: 30px;
+    margin: 30px 8px 0 0;
     float: left;
-    margin-right: 8px;
 }
 
 div.small_boxes a {
@@ -242,9 +215,7 @@ div#left_column a {
 h2.project {
     color: #ffc000;
     font-size: 23px;
-    margin-left: 13px;
-    padding-top: 35px;
-    font-family: Verdana;
+    margin: 35px 0 0 13px;
 }
 
 hr {
@@ -256,18 +227,14 @@ hr {
 h3 {
     color: #ffc000;
     font-size: 18px;
-    font-family: Verdana;
-    margin-top: 43px;
-    margin-left: 7px;
+    margin: 43px 0 0 7px;
 }
 
 span {
     color: #ffc000;
     font-size: 18px;
-    font-family: Verdana;
     float: right;
-    margin-bottom: 7px;
-    margin-right: 15px;
+    margin: 0 15px 7px 0;
 }
 
 span.link a {
@@ -282,10 +249,9 @@ span.link a:visited {
 p {
     color: #ffffff;
     line-height: 24px;
-    margin-top: 7px;
-    margin-left: 7px;
+    margin: 7px 15px 0 7px;
     text-align: justify;
-    margin-right: 15px;
+    font-size: 14px;
 }
 
 div#right_column {
@@ -299,9 +265,7 @@ div#right_column {
 
 div#right_column img {
     float: left;
-    margin-right: 10px;
-    margin-top: 7px;
-    margin-left: 9px;
+    margin: 7px 10px 0 9px;
 }
 
 div#right_column p {
@@ -340,6 +304,7 @@ div#examples div {
 
 div#examples div ul {
     margin: 10px 0 0 65px;
+    font-size: 15px;
 }
 
 div#examples h2 {
@@ -350,14 +315,6 @@ div#examples h2 {
 div#examples div:first-child {
     background: none;
     margin-left: -55px;
-}
-
-div#examples div:last-child {
-
-}
-
-div#footer {
-
 }
 
 div.group:before,
@@ -387,8 +344,7 @@ div.footer_content {
 div.footer_content a {
     text-decoration: none;
     color: #ffffff;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 0 10px;
 }
 
 div.footer_content a:hover {
