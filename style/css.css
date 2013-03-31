@@ -320,3 +320,17 @@ div#footer {
 div#footer p {
     color: #ffffff;
 }
+
+div#template_source {
+    margin-right: 97px;
+    margin-top: -18px;
+}
+
+div#template_source p {
+    color: #ffc000;
+}
+
+div#template_source a {
+    color: #ffc000;
+    text-decoration: underline;
+}
