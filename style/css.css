@@ -1,3 +1,17 @@
+div.group:before,
+div.group:after {
+    content: "";
+    display: table;
+}
+
+div.group:after {
+    clear: both;
+}
+
+div.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -160,14 +174,20 @@ div.offer img {
 div.offer a:first-child {
     outline: none;
     display: block;
-height: 365px;
-    }
+    height: 365px;
+}
 
 h2 {
     color: #ffc000;
     font-size: 23px;
     margin: 5px 0 0 13px;
     line-height: 27px;
+}
+
+h3 {
+    color: #ffc000;
+    font-size: 18px;
+    margin: 43px 0 0 7px;
 }
 
 h4 {
@@ -177,76 +197,58 @@ h4 {
     margin: 0 0 10px 13px;
 }
 
-
-
-div#small_boxes {
-    width: 981px;
-}
-
-div.small_boxes {
+div.small_box {
     margin: 30px 8px 0 0;
     float: left;
-}
-
-div.small_boxes a {
-    text-decoration: none;
     color: #ffc000;
-}
-
-h2.box {
     font-size: 19px;
     text-align: center;
 }
 
-div#left_column {
+div.small_box  h2 {
+    font-size: 19px;
+}
+
+div.half_page_gray_box {
     width: 485px;
-    height: 380px;
     background-color: #464646;
     margin-top: 19px;
-    float: left;
     overflow: hidden;
 }
 
-div#left_column a {
-    text-decoration: none;
+div.box_fixed_height {
+    height: 380px;
+}
+
+div.half_page_gray_box a {
     color: #ffc000;
 }
 
-h2.project {
+div.half_page_gray_box h2 {
     color: #ffc000;
     font-size: 23px;
     margin: 35px 0 0 13px;
 }
 
-hr {
+div.half_page_gray_box hr {
     color: #ffffff;
     width: 95%;
     text-align: center;
 }
 
-h3 {
-    color: #ffc000;
-    font-size: 18px;
-    margin: 43px 0 0 7px;
-}
-
-span {
+div.half_page_gray_box span {
     color: #ffc000;
     font-size: 18px;
     float: right;
     margin: 0 15px 7px 0;
 }
 
-span.link a {
+div.half_page_gray_box span.link a {
     font-size: 10px;
     color: #ffc000;
 }
 
-span.link a:visited {
-    color: #ffc000;
-}
-
-p {
+div.half_page_gray_box p {
     color: #ffffff;
     line-height: 24px;
     margin: 7px 15px 0 7px;
@@ -254,38 +256,33 @@ p {
     font-size: 14px;
 }
 
-div#right_column {
-    background-color: #464646;
-    width: 485px;
-    height: 380px;
-    margin-top: 19px;
-    float: right;
-    overflow: hidden;
-}
-
-div#right_column img {
+div.half_page_gray_box img {
     float: left;
     margin: 7px 10px 0 9px;
 }
 
-div#right_column p {
+div.half_page_gray_box p.project {
     margin-top: 26px;
-    text-align: justify;
+
 }
 
 div.space {
     margin-top: 50px;
     padding-bottom: 15px;
-    min-height: 190px;
 }
 
-ul.lists li a {
+ul.list {
+    margin: 10px 0 0 65px;
+    font-size: 15px;
+}
+
+ul.list li a {
     color: #383736;
     text-decoration: none;
     line-height: 27px;
 }
 
-ul.lists li a:hover {
+ul.list li a:hover {
     color: #ffc000;
 }
 
@@ -295,16 +292,12 @@ img.spliter {
 
 div#examples div {
     width: 259px;
+    min-height: 190px;
     float: left;
     padding-top: 21px;
     background-image: url("../images/spliter.png");
     background-repeat: no-repeat;
     background-position: 0 20px;
-}
-
-div#examples div ul {
-    margin: 10px 0 0 65px;
-    font-size: 15px;
 }
 
 div#examples h2 {
@@ -317,41 +310,13 @@ div#examples div:first-child {
     margin-left: -55px;
 }
 
-div.group:before,
-div.group:after {
-    content: "";
-    display: table;
-}
-
-div.group:after {
-    clear: both;
-}
-
-div.group {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-}
-
 div#footer {
     margin: 0 auto;
     width: 748px;
     height: 50px;
+    padding-top: 20px;
 }
 
-div.footer_content {
-    margin-top: 20px;
-}
-
-div.footer_content a {
-    text-decoration: none;
-    color: #ffffff;
-    margin: 0 10px 0 10px;
-}
-
-div.footer_content a:hover {
-    color: #ffc000;
-}
-
-div.footer_content p {
+div#footer p {
     color: #ffffff;
 }
-
