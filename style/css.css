@@ -114,6 +114,7 @@ a#button_quote {
     top: 46px;
     left: 817px;
     padding-top: 8px;
+    behavior: url("pie/PIE.htc");
 }
 
 a#button_facebook {
@@ -352,6 +353,7 @@ div#appear_box {
     background: -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background: radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     border-radius: 10px 10px 10px 10px;
+    behavior: url("pie/PIE.htc");
 }
 
 div#appear_box img {
